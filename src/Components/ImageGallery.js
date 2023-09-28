@@ -23,7 +23,7 @@ const ImageGallery = () => {
     <div>
       <div className="image-grid">
         {images.map((image) => (
-          <div key={image.id} className="image-card">
+          <div key={image.id} >
             <img src={image.download_url} alt={`Image ${image.id}`}/>
           </div>
         ))}
